@@ -18,7 +18,7 @@ class ValidatorAbstract implements ValidatorInterface
     /**
      * Add another validator to the restrictions.
      * @param callable $validator The validator to add.
-     * @return Schemer\Validator\ValidatorAbstract
+     * @return \Schemer\Validator\ValidatorAbstract
      */
     protected function pipe(callable $validator) : ValidatorAbstract
     {
@@ -91,7 +91,7 @@ class ValidatorAbstract implements ValidatorInterface
     /**
      * Execute the validation functions.
      * @param $value The value to validate.
-     * @return Schemer\Result The validation result.
+     * @return \Schemer\Result The validation result.
      */
     public function validate($value) : Result
     {
